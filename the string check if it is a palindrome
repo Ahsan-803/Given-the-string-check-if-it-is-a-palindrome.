@@ -1,0 +1,18 @@
+Console.Write("Please Enter a Number >> ");
+string x = Console.ReadLine();
+//Console.WriteLine(x);
+string msg = "Its a Plindrum String";
+int len = x.Length;
+
+for (int i = 0; i < len / 2; i++)
+{
+    if (x[i] != x[len - 1 - i])
+    {
+        msg = "Its Not a Plindurm string";
+        Console.WriteLine(msg);
+        break;
+    }
+    else
+    {
+        Console.WriteLine(msg);
+    }
